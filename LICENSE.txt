@@ -1,0 +1,38 @@
+ARGB Controller for Galax - End User License Agreement
+
+Copyright (c) 2026 Batuhan Çakır (Rheadric). All rights reserved.
+
+1. GRANT OF LICENSE
+   You are granted a personal, non-exclusive, royalty-free license to download,
+   install and use this software ("the Software") on any number of computers you
+   own or control, for personal, non-commercial purposes.
+
+2. RESTRICTIONS
+   You may not:
+   a) sell, rent, lease, sublicense or otherwise commercially distribute the
+      Software or any derivative of it;
+   b) reverse engineer, decompile or disassemble the Software, except to the
+      extent such activity is expressly permitted by applicable law
+      notwithstanding this limitation;
+   c) remove or alter any copyright, trademark or other proprietary notices.
+
+3. NO WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+4. LIMITATION OF LIABILITY
+   IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, INCLUDING BUT NOT LIMITED TO DAMAGE TO HARDWARE, OVERHEATING OR
+   LOSS OF DEVICE SETTINGS, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+   SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+   The Software writes to the lighting controllers of your graphics card,
+   keyboard, mouse and motherboard, and can change the speed of your graphics
+   card fans. It includes safety limits for fan control, but you remain
+   responsible for monitoring your hardware.
+
+5. THIRD-PARTY COMPONENTS AND TRADEMARKS
+   The Software includes third-party components governed by their own licenses,
+   and names products of other companies only to identify compatible hardware.
+   See THIRD-PARTY-NOTICES.txt.

@@ -1,0 +1,52 @@
+ARGB CONTROLLER FOR GALAX 1.0.0 - THIRD-PARTY NOTICES
+==================================================
+
+ArgbGalax.exe is a framework-dependent .NET 10 single-file application. It runs on the
+Microsoft .NET 10 Desktop Runtime installed on your PC, which is not included in this
+download. The executable contains the .NET application host (apphost), licensed under the
+MIT License (text below).
+
+The program calls, without redistributing them, components that are already on your PC:
+  - NVIDIA driver libraries nvapi64.dll and nvml.dll (lighting I2C bus, fan status, telemetry)
+  - Windows HID, SetupAPI and firmware-table APIs
+  - SteelSeries GG's local GameSense server, when SteelSeries GG is installed and running
+
+Hardware protocol reference, no source code included: the GALAX V2 RGB register map,
+the ASUS Aura keyboard direct-mode packets and LED order, and the MSI Mystic Light 185-byte
+feature report layout were learned from the OpenRGB project
+(https://gitlab.com/CalcProgrammer1/OpenRGB, GNU GPL v2) and its issue #4826. ARGB Controller
+for Galax is its own implementation and does not contain OpenRGB source files.
+
+GALAX is a trademark of GALAX (Galaxy Microsystems Ltd.). NVIDIA and GeForce are trademarks of
+NVIDIA Corporation. ASUS, ROG, Aura and Armoury Crate are trademarks of ASUSTeK Computer Inc.
+MSI, Mystic Light and MSI Center are trademarks of Micro-Star International. SteelSeries, GG
+and GameSense are trademarks of SteelSeries ApS. G.Skill is a trademark of G.Skill International.
+This project is not affiliated with any of them.
+
+
+.NET (apphost) - MIT License
+--------------------------------------------------
+
+The MIT License (MIT)
+
+Copyright (c) .NET Foundation and Contributors
+
+All rights reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
