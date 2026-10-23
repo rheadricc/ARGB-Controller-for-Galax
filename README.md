@@ -9,7 +9,7 @@ mouse and motherboard lighting and your GPU fans, from one small window.**
 
 ![No install](https://img.shields.io/badge/install-none%20needed-lightgrey?style=flat-square)
 ![Size](https://img.shields.io/badge/size-under%201%20MB-lightgrey?style=flat-square)
-![Offline](https://img.shields.io/badge/network-none-lightgrey?style=flat-square)
+![Offline](https://img.shields.io/badge/internet-not%20used-lightgrey?style=flat-square)
 
 ![Light page](docs/screenshots/isik.png)
 
