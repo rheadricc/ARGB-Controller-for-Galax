@@ -2,7 +2,7 @@
 
 <img src="docs/logo.png" width="96" alt="Rheadric Lumen logo">
 
-# Rheadric Lumen v2.0.1
+# Rheadric Lumen v2.0.2
 
 **All the lighting and fans in your PC, from one window.**
 
@@ -11,11 +11,11 @@ live sensors and an FPS overlay on top of your game. One small native app instea
 
 **English** · [Türkçe](#turkce)
 
-<a href="https://github.com/rheadricc/RheadricLumen/releases/download/v2.0.1/Rheadric-Lumen-v2.0.1-win64.zip"><img height="40" alt="Download Rheadric Lumen 2.0.1 for Windows" src="https://img.shields.io/badge/Download-v2.0.1%20%7C%20Windows%2010%20%2F%2011-2ea44f?style=for-the-badge"></a>
+<a href="https://github.com/rheadricc/RheadricLumen/releases/download/v2.0.2/Rheadric-Lumen-v2.0.2-win64.zip"><img height="40" alt="Download Rheadric Lumen 2.0.2 for Windows" src="https://img.shields.io/badge/Download-v2.0.2%20%7C%20Windows%2010%20%2F%2011-2ea44f?style=for-the-badge"></a>
 
 ![No install](https://img.shields.io/badge/install-none%20needed-lightgrey?style=flat-square)
 ![No .NET needed](https://img.shields.io/badge/.NET%20runtime-not%20needed-lightgrey?style=flat-square)
-![Offline](https://img.shields.io/badge/internet-not%20used-lightgrey?style=flat-square)
+![No account](https://img.shields.io/badge/account-not%20needed-lightgrey?style=flat-square)
 ![English and Turkish](https://img.shields.io/badge/language-English%20%7C%20T%C3%BCrk%C3%A7e-lightgrey?style=flat-square)
 
 ![Light page: one color for every device](docs/screenshots/en/light.png)
@@ -38,7 +38,7 @@ live sensors and an FPS overlay on top of your game. One small native app instea
 (the renderer: `libSkiaSharp.dll`, `libHarfBuzzSharp.dll`, `av_libglesv2.dll`). Get it either way:
 
 1. the green **Download** button above →
-   [`Rheadric-Lumen-v2.0.1-win64.zip`](https://github.com/rheadricc/RheadricLumen/releases/download/v2.0.1/Rheadric-Lumen-v2.0.1-win64.zip) (~15.8 MB), or
+   [`Rheadric-Lumen-v2.0.2-win64.zip`](https://github.com/rheadricc/RheadricLumen/releases/download/v2.0.2/Rheadric-Lumen-v2.0.2-win64.zip) (~16.1 MB), or
 2. the green **`<> Code`** button at the top of this page → **Download ZIP**.
 
 Then **extract the zip** (right-click → *Extract All…*), move the **Rheadric Lumen** folder somewhere permanent
@@ -107,7 +107,8 @@ in one window: pick the devices, pick a color or an effect, set the fans, and ke
 |---|---|
 | ⚡ **Quick control** | Tray menu with colors, effects, profiles and the overlay; **Ctrl+Alt+L** toggles every light from anywhere; optional start with Windows; [command line](#command-line) |
 | 🌍 **English / Türkçe** | Starts in English; **Settings → Language** switches the whole interface at once, tray menu and overlay included |
-| 🔒 **Offline** | No account, no internet, no telemetry, no update checks |
+| 🐞 **Report a bug** | The bug icon at the top right sends what went wrong straight to the developer, with the hardware and recent logs if you want |
+| 🔒 **Private** | No account, no ads, no update checks. Anonymous diagnostics you can read first and turn off any time ([Privacy](#privacy)) |
 
 ---
 
@@ -134,7 +135,8 @@ in one window: pick the devices, pick a color or an effect, set the fans, and ke
 ## Supported hardware
 
 What's below has been tested on real hardware unless it says otherwise. Have something else?
-[Open an issue](https://github.com/rheadricc/RheadricLumen/issues) with its exact model name.
+[Open an issue](https://github.com/rheadricc/RheadricLumen/issues) with its exact model name, or press the bug icon at the top right of
+the app: with *Include hardware details* on, the report already says what was found.
 
 ### Lighting
 
@@ -310,8 +312,28 @@ Start SteelSeries GG first, then press **Rescan** on the Devices page.
 
 ## Privacy
 
-No internet access, no telemetry, no update checks. The only network traffic is to SteelSeries GG's local
-GameSense server on your own PC (`127.0.0.1`), and only when a SteelSeries device is in use.
+No account, no ads, no update checks. Two kinds of report go over the internet, both to the developer's own server
+(a Cloudflare Worker), so that support for more hardware can be added and bugs found:
+
+- **Anonymous diagnostics.** About once a day while the app runs: Windows version, processor, motherboard, graphics
+  cards, RAM modules, USB devices from lighting brands, which lights and fans the app could drive and the errors it
+  got, and which other RGB or fan tools are running. After a crash, the crash log. A random install ID ties one PC's
+  reports together. Never sent: your name, user name, PC name, files or serial numbers; folder paths and e-mail
+  addresses in logs are blanked out. Your IP address is not stored. Reports are deleted after 180 days (crash and bug
+  reports after 400).
+- **Bug reports**, only when you press **Send** in the bug form (the bug icon at the top right). The contact field is
+  optional, and **Include hardware details and recent logs** can be switched off.
+
+On first start the app explains this and asks: **No thanks** sends nothing and asks once more after 30 days.
+**Settings → Diagnostics and bug reports** turns it on or off any time, and **Show what's sent** shows the report
+exactly as it would go.
+
+| First start | Report a bug |
+|---|---|
+| ![The diagnostics notice](docs/screenshots/en/diagnostics-notice.png) | ![The bug form](docs/screenshots/en/bug-report.png) |
+
+The only other network traffic is to SteelSeries GG's local GameSense server on your own PC (`127.0.0.1`), and only
+when a SteelSeries device is in use.
 
 ---
 
@@ -358,7 +380,7 @@ oyunun üstünde canlı sensör ve FPS paneli. Bir yığın üretici programı y
 `libHarfBuzzSharp.dll`, `av_libglesv2.dll`). İki yoldan biriyle al:
 
 1. yukarıdaki yeşil **Download** düğmesi →
-   [`Rheadric-Lumen-v2.0.1-win64.zip`](https://github.com/rheadricc/RheadricLumen/releases/download/v2.0.1/Rheadric-Lumen-v2.0.1-win64.zip) (~15.8 MB), ya da
+   [`Rheadric-Lumen-v2.0.2-win64.zip`](https://github.com/rheadricc/RheadricLumen/releases/download/v2.0.2/Rheadric-Lumen-v2.0.2-win64.zip) (~16.1 MB), ya da
 2. sayfanın üstündeki yeşil **`<> Code`** düğmesi → **Download ZIP**.
 
 Sonra **zip'i çıkar** (sağ tık → *Tümünü Ayıkla…*), **Rheadric Lumen** klasörünü kalıcı bir yere taşı
@@ -432,7 +454,8 @@ renk ya da efekt ver, fanları ayarla, oyundayken sensörlere göz at.
 |---|---|
 | ⚡ **Hızlı kontrol** | Renkler, efektler, profiller ve overlay tepsi menüsünde; **Ctrl+Alt+L** her yerden bütün ışıkları açar / kapatır; isteğe bağlı Windows ile başlatma; [komut satırı](#tr-komut) |
 | 🌍 **English / Türkçe** | İlk kurulumda İngilizce açılır; **Ayarlar → Dil** bütün arayüzü, tepsi menüsü ve overlay dahil, anında değiştirir |
-| 🔒 **Çevrimdışı** | Hesap yok, internet yok, telemetri yok, güncelleme kontrolü yok |
+| 🐞 **Hata bildir** | Sağ üstteki böcek simgesi neyin ters gittiğini doğrudan geliştiriciye gönderir; istersen donanım bilgisi ve son kayıtlarla |
+| 🔒 **Gizli** | Hesap yok, reklam yok, güncelleme kontrolü yok. Önce okuyabileceğin, istediğin zaman kapatabileceğin anonim tanılama ([Gizlilik](#tr-gizlilik)) |
 
 ---
 
@@ -463,7 +486,8 @@ renk ya da efekt ver, fanları ayarla, oyundayken sensörlere göz at.
 ## Desteklenen donanım
 
 Aksi yazmıyorsa aşağıdakiler gerçek donanımda denendi. Sende başka bir şey mi var?
-Tam model adıyla [bir issue aç](https://github.com/rheadricc/RheadricLumen/issues).
+Tam model adıyla [bir issue aç](https://github.com/rheadricc/RheadricLumen/issues) ya da uygulamanın sağ üstündeki böcek simgesine bas:
+*Donanım bilgisini ekle* açıkken rapor neyin bulunduğunu zaten söyler.
 
 ### Işık
 
@@ -648,8 +672,28 @@ kapanana kadar son renklerini korur.
 
 ## Gizlilik
 
-İnternet erişimi yok, telemetri yok, güncelleme kontrolü yok. Tek ağ trafiği, SteelSeries GG'nin kendi bilgisayarındaki
-yerel GameSense sunucusuna (`127.0.0.1`) gider, o da yalnızca bir SteelSeries cihazı kullanılırken.
+Hesap yok, reklam yok, güncelleme kontrolü yok. İnternete iki tür rapor gider, ikisi de geliştiricinin kendi sunucusuna
+(bir Cloudflare Worker); amaç daha çok donanımı desteklemek ve hataları bulmak:
+
+- **Anonim tanılama.** Uygulama açıkken günde bir kez kadar: Windows sürümü, işlemci, anakart, ekran kartları, RAM
+  modülleri, ışık markalarının USB cihazları, uygulamanın hangi ışıkları ve fanları sürebildiği ve aldığı hatalar,
+  çalışan diğer RGB ya da fan araçları. Bir kilitlenmeden sonra kilitlenme kaydı. Rastgele bir kurulum kimliği aynı
+  bilgisayarın raporlarını birbirine bağlar. Asla gönderilmez: adın, kullanıcı adın, bilgisayar adın, dosyaların, seri
+  numaraları; kayıtlardaki klasör yolları ve e-posta adresleri silinir. IP adresin kaydedilmez. Raporlar 180 gün sonra
+  silinir (kilitlenme ve hata bildirimleri 400 gün sonra).
+- **Hata bildirimleri**, yalnızca hata formunda (sağ üstteki böcek simgesi) **Gönder**'e bastığında. İletişim alanı
+  isteğe bağlıdır, **Donanım bilgisini ve son kayıtları ekle** kapatılabilir.
+
+İlk açılışta uygulama bunu anlatıp sorar: **İstemiyorum** dersen hiçbir şey gönderilmez, 30 gün sonra bir kez daha
+sorulur. **Ayarlar → Tanılama ve hata bildirimi** istediğin zaman açar ya da kapatır; **Gönderilecekleri göster** raporu
+gideceği hâliyle gösterir.
+
+| İlk açılış | Hata bildir |
+|---|---|
+| ![Tanılama bildirimi](docs/screenshots/tr/diagnostics-notice.png) | ![Hata formu](docs/screenshots/tr/bug-report.png) |
+
+Başka tek ağ trafiği, SteelSeries GG'nin kendi bilgisayarındaki yerel GameSense sunucusuna (`127.0.0.1`) gider, o da
+yalnızca bir SteelSeries cihazı kullanılırken.
 
 ---
 
