@@ -50,7 +50,7 @@ Keep the four files together. Older versions and release notes: [Releases](https
 
 > **Updating?** Quit the old version (tray icon → **Exit**) and start the new one: colors, profiles, favorites,
 > fan settings and "Start with Windows" are carried over. Coming from 2.0.0 or older, the interface stays in Turkish;
-> switch it in **Settings → Language**. The app was called *ARGB Controller for Galax* before 2.0.
+> switch it in **Settings → Language**.
 
 ---
 
@@ -392,8 +392,7 @@ Eski sürümler ve sürüm notları: [Releases](https://github.com/rheadricc/Rhe
 
 > **Güncelliyor musun?** Eski sürümü kapat (tepsi simgesi → **Çıkış**) ve yenisini aç: renkler, profiller, favoriler,
 > fan ayarları ve "Windows ile başlat" taşınır. 2.0.0 ya da daha eskisinden geliyorsan arayüz Türkçe kalır.
-> İlk kurulum İngilizce açılır; **Settings → Language → Türkçe** ile değiştir. Uygulamanın 2.0'dan önceki adı
-> *ARGB Controller for Galax*'tı.
+> İlk kurulum İngilizce açılır; **Settings → Language → Türkçe** ile değiştir.
 
 ---
 
