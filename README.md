@@ -2,7 +2,7 @@
 
 <img src="docs/logo.png" width="96" alt="Rheadric Lumen logo">
 
-# Rheadric Lumen v2.0.2
+# Rheadric Lumen v2.0.3
 
 **All the lighting and fans in your PC, from one window.**
 
@@ -11,7 +11,7 @@ live sensors and an FPS overlay on top of your game. One small native app instea
 
 **English** · [Türkçe](#turkce)
 
-<a href="https://github.com/rheadricc/RheadricLumen/releases/download/v2.0.2/Rheadric-Lumen-v2.0.2-win64.zip"><img height="40" alt="Download Rheadric Lumen 2.0.2 for Windows" src="https://img.shields.io/badge/Download-v2.0.2%20%7C%20Windows%2010%20%2F%2011-2ea44f?style=for-the-badge"></a>
+<a href="https://github.com/rheadricc/RheadricLumen/releases/download/v2.0.3/Rheadric-Lumen-v2.0.3-win64.zip"><img height="40" alt="Download Rheadric Lumen 2.0.3 for Windows" src="https://img.shields.io/badge/Download-v2.0.3%20%7C%20Windows%2010%20%2F%2011-2ea44f?style=for-the-badge"></a>
 
 ![No install](https://img.shields.io/badge/install-none%20needed-lightgrey?style=flat-square)
 ![No .NET needed](https://img.shields.io/badge/.NET%20runtime-not%20needed-lightgrey?style=flat-square)
@@ -38,7 +38,7 @@ live sensors and an FPS overlay on top of your game. One small native app instea
 (the renderer: `libSkiaSharp.dll`, `libHarfBuzzSharp.dll`, `av_libglesv2.dll`). Get it either way:
 
 1. the green **Download** button above →
-   [`Rheadric-Lumen-v2.0.2-win64.zip`](https://github.com/rheadricc/RheadricLumen/releases/download/v2.0.2/Rheadric-Lumen-v2.0.2-win64.zip) (~16.1 MB), or
+   [`Rheadric-Lumen-v2.0.3-win64.zip`](https://github.com/rheadricc/RheadricLumen/releases/download/v2.0.3/Rheadric-Lumen-v2.0.3-win64.zip) (~16.3 MB), or
 2. the green **`<> Code`** button at the top of this page → **Download ZIP**.
 
 Then **extract the zip** (right-click → *Extract All…*), move the **Rheadric Lumen** folder somewhere permanent
@@ -48,9 +48,11 @@ Keep the four files together. Older versions and release notes: [Releases](https
 > **Windows SmartScreen warning?** The exe is not digitally signed yet, so Windows shows
 > *"Windows protected your PC"* on first run. Click **More info → Run anyway**.
 
-> **Updating?** Quit the old version (tray icon → **Exit**) and start the new one: colors, profiles, favorites,
-> fan settings and "Start with Windows" are carried over. Coming from 2.0.0 or older, the interface stays in Turkish;
-> switch it in **Settings → Language**.
+> **Updating?** From 2.0.3 on the app does it itself: once a day it looks for a new release here, and a green
+> **download button** shows up at the top right when there is one. One click downloads it, checks it and restarts the
+> app as the new version (**Settings → Updates → Check for updates** looks right away). From an older version, quit
+> it (tray icon → **Exit**) and start the new one: colors, profiles, favorites, fan settings and "Start with Windows"
+> are carried over. Coming from 2.0.0 or older, the interface stays in Turkish; switch it in **Settings → Language**.
 
 ---
 
@@ -61,7 +63,7 @@ Keep the four files together. Older versions and release notes: [Releases](https
 | **Windows 10 or 11, 64-bit** | Required. |
 | **Nothing else for the app itself** | No installer, no .NET runtime, no Visual C++ redistributable: it's a native Windows program. |
 | **NVIDIA graphics driver** | For the graphics card's lighting, GPU fans and GPU readings. Any recent GeForce driver. |
-| **[PawnIO](https://pawnio.eu)** *(free, signed driver, optional)* | Only for **RAM lighting**, **motherboard fans** and **CPU / RAM temperatures**. Install it once: [PawnIO_setup.exe](https://github.com/namazso/PawnIO.Setup/releases/latest). It isn't bundled; it's the same driver OpenRGB and LibreHardwareMonitor use. |
+| **[PawnIO](https://pawnio.eu)** *(free, signed driver, optional)* | Only for **RAM lighting**, **motherboard fans** and **CPU / RAM temperatures**. On PCs that need it the app offers to install it on first start (or **Settings → PawnIO driver**): it downloads the official installer from its author's GitHub and checks it first. By hand: [PawnIO_setup.exe](https://github.com/namazso/PawnIO.Setup/releases/latest). It's the same driver OpenRGB and LibreHardwareMonitor use. |
 | **SteelSeries GG** *(optional)* | Only for SteelSeries mouse lighting; it must be running. |
 
 Windows asks for **administrator permission** only when a feature needs it: GPU fan modes other than Auto,
@@ -107,8 +109,9 @@ in one window: pick the devices, pick a color or an effect, set the fans, and ke
 |---|---|
 | ⚡ **Quick control** | Tray menu with colors, effects, profiles and the overlay; **Ctrl+Alt+L** toggles every light from anywhere; optional start with Windows; [command line](#command-line) |
 | 🌍 **English / Türkçe** | Starts in English; **Settings → Language** switches the whole interface at once, tray menu and overlay included |
+| ⬇️ **Updates** | Looks for a new version once a day; the green button at the top right installs it in one click and your settings stay |
 | 🐞 **Report a bug** | The bug icon at the top right sends what went wrong straight to the developer, with the hardware and recent logs if you want |
-| 🔒 **Private** | No account, no ads, no update checks. Anonymous diagnostics you can read first and turn off any time ([Privacy](#privacy)) |
+| 🔒 **Private** | No account, no ads. Anonymous diagnostics you can read first and turn off any time ([Privacy](#privacy)) |
 
 ---
 
@@ -129,6 +132,10 @@ in one window: pick the devices, pick a color or an effect, set the fans, and ke
 | FPS panel settings | FPS panel on screen | Vertical strip (with FPS) | Settings and language |
 |---|---|---|---|
 | ![FPS panel page](docs/screenshots/en/fps-panel.png) | ![FPS panel on screen](docs/screenshots/en/fps-on-screen.png) | ![Vertical strip](docs/screenshots/en/overlay-vertical.png) | ![Settings page](docs/screenshots/en/settings.png) |
+
+| A new version | PawnIO on first start |
+|---|---|
+| ![The update dialog](docs/screenshots/en/update.png) | ![The PawnIO question](docs/screenshots/en/pawnio.png) |
 
 ---
 
@@ -174,7 +181,8 @@ RAM lighting sits on the motherboard's SMBus, which Windows only lets a kernel d
 ship its own driver; it uses **[PawnIO](https://pawnio.eu)**, the signed open-source driver OpenRGB and
 LibreHardwareMonitor use too.
 
-1. Install PawnIO once: [PawnIO_setup.exe](https://github.com/namazso/PawnIO.Setup/releases/latest) (from its author's GitHub).
+1. Install PawnIO once: the app offers it on first start (**Settings → PawnIO driver** any time), or by hand:
+   [PawnIO_setup.exe](https://github.com/namazso/PawnIO.Setup/releases/latest) (from its author's GitHub).
 2. Start Rheadric Lumen, open **Devices**, press **Set color** on the RAM card and pick a color.
 3. Windows asks for administrator permission **once per app start**: the RAM writes run in a small helper
    process (`RheadricLumen.exe --ram-host`) that exits together with the app.
@@ -274,8 +282,8 @@ In PowerShell add `| Out-Host` to see the output.
 3. Delete the **Rheadric Lumen** folder and the settings folder `%APPDATA%\RheadricLumen`.
 4. If you installed PawnIO only for this app, remove it from *Settings → Apps* like any other program.
 
-The app itself installs no drivers and no services. If you already deleted the exe while autostart was on,
-remove the `RheadricLumen` value under `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run`.
+The app installs no services of its own; PawnIO, if you let it install it, goes as in step 4. If you already deleted
+the exe while autostart was on, remove the `RheadricLumen` value under `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run`.
 
 ---
 
@@ -312,7 +320,7 @@ Start SteelSeries GG first, then press **Rescan** on the Devices page.
 
 ## Privacy
 
-No account, no ads, no update checks. Two kinds of report go over the internet, both to the developer's own server
+No account, no ads. Two kinds of report go over the internet, both to the developer's own server
 (a Cloudflare Worker), so that support for more hardware can be added and bugs found:
 
 - **Anonymous diagnostics.** About once a day while the app runs: Windows version, processor, motherboard, graphics
@@ -332,8 +340,13 @@ exactly as it would go.
 |---|---|
 | ![The diagnostics notice](docs/screenshots/en/diagnostics-notice.png) | ![The bug form](docs/screenshots/en/bug-report.png) |
 
-The only other network traffic is to SteelSeries GG's local GameSense server on your own PC (`127.0.0.1`), and only
-when a SteelSeries device is in use.
+Other network traffic:
+
+- **Update check**, once a day: the app asks GitHub for the latest release of this repository. Nothing about you or
+  your PC goes with it; GitHub sees what any download shows it (your IP address and the app's version).
+- **Downloads from GitHub**, only when you click: a new version (**Download and install**) and the PawnIO installer
+  (**Install**). Both are checked against their SHA-256 before anything runs.
+- SteelSeries GG's local GameSense server on your own PC (`127.0.0.1`), only when a SteelSeries device is in use.
 
 ---
 
@@ -380,7 +393,7 @@ oyunun üstünde canlı sensör ve FPS paneli. Bir yığın üretici programı y
 `libHarfBuzzSharp.dll`, `av_libglesv2.dll`). İki yoldan biriyle al:
 
 1. yukarıdaki yeşil **Download** düğmesi →
-   [`Rheadric-Lumen-v2.0.2-win64.zip`](https://github.com/rheadricc/RheadricLumen/releases/download/v2.0.2/Rheadric-Lumen-v2.0.2-win64.zip) (~16.1 MB), ya da
+   [`Rheadric-Lumen-v2.0.3-win64.zip`](https://github.com/rheadricc/RheadricLumen/releases/download/v2.0.3/Rheadric-Lumen-v2.0.3-win64.zip) (~16.3 MB), ya da
 2. sayfanın üstündeki yeşil **`<> Code`** düğmesi → **Download ZIP**.
 
 Sonra **zip'i çıkar** (sağ tık → *Tümünü Ayıkla…*), **Rheadric Lumen** klasörünü kalıcı bir yere taşı
@@ -390,8 +403,11 @@ Eski sürümler ve sürüm notları: [Releases](https://github.com/rheadricc/Rhe
 > **SmartScreen uyarısı mı çıktı?** Exe henüz dijital olarak imzalı değil; ilk açılışta *"Windows bilgisayarınızı
 > korudu"* görünür. **Ek bilgi → Yine de çalıştır**'a bas.
 
-> **Güncelliyor musun?** Eski sürümü kapat (tepsi simgesi → **Çıkış**) ve yenisini aç: renkler, profiller, favoriler,
-> fan ayarları ve "Windows ile başlat" taşınır. 2.0.0 ya da daha eskisinden geliyorsan arayüz Türkçe kalır.
+> **Güncelliyor musun?** 2.0.3'ten itibaren bunu uygulama kendisi yapar: günde bir kez buradaki yeni sürüme bakar,
+> varsa sağ üstte yeşil bir **indirme düğmesi** çıkar. Tek tıkla indirir, doğrular ve uygulamayı yeni sürümle yeniden
+> açar (**Ayarlar → Güncellemeler → Güncellemeleri denetle** hemen bakar). Daha eski bir sürümden geçiyorsan onu kapat
+> (tepsi simgesi → **Çıkış**) ve yenisini aç: renkler, profiller, favoriler, fan ayarları ve "Windows ile başlat"
+> taşınır. 2.0.0 ya da daha eskisinden geliyorsan arayüz Türkçe kalır.
 > İlk kurulum İngilizce açılır; **Settings → Language → Türkçe** ile değiştir.
 
 ---
@@ -405,7 +421,7 @@ Eski sürümler ve sürüm notları: [Releases](https://github.com/rheadricc/Rhe
 | **Windows 10 ya da 11, 64 bit** | Gerekli. |
 | **Uygulamanın kendisi için başka bir şey gerekmez** | Kurulum yok, .NET yok, Visual C++ paketi yok: yerel bir Windows programı. |
 | **NVIDIA ekran kartı sürücüsü** | Ekran kartının ışığı, fanları ve GPU değerleri için. Güncel herhangi bir GeForce sürücüsü. |
-| **[PawnIO](https://pawnio.eu)** *(ücretsiz, imzalı sürücü, isteğe bağlı)* | Yalnızca **RAM ışığı**, **anakart fanları** ve **CPU / RAM sıcaklıkları** için. Bir kez kur: [PawnIO_setup.exe](https://github.com/namazso/PawnIO.Setup/releases/latest). Pakete dahil değil; OpenRGB ve LibreHardwareMonitor'ın da kullandığı sürücü. |
+| **[PawnIO](https://pawnio.eu)** *(ücretsiz, imzalı sürücü, isteğe bağlı)* | Yalnızca **RAM ışığı**, **anakart fanları** ve **CPU / RAM sıcaklıkları** için. Gereken bilgisayarlarda uygulama ilk açılışta kurmayı önerir (ya da **Ayarlar → PawnIO sürücüsü**): resmi kurulumu geliştiricisinin GitHub'ından indirir ve önce doğrular. Elle: [PawnIO_setup.exe](https://github.com/namazso/PawnIO.Setup/releases/latest). OpenRGB ve LibreHardwareMonitor'ın da kullandığı sürücü. |
 | **SteelSeries GG** *(isteğe bağlı)* | Yalnızca SteelSeries mouse ışığı için; açık olmalı. |
 
 Windows **yönetici izni**ni yalnızca bir özellik gerektirdiğinde ister: Otomatik dışındaki ekran kartı fan modları ve
@@ -453,8 +469,9 @@ renk ya da efekt ver, fanları ayarla, oyundayken sensörlere göz at.
 |---|---|
 | ⚡ **Hızlı kontrol** | Renkler, efektler, profiller ve overlay tepsi menüsünde; **Ctrl+Alt+L** her yerden bütün ışıkları açar / kapatır; isteğe bağlı Windows ile başlatma; [komut satırı](#tr-komut) |
 | 🌍 **English / Türkçe** | İlk kurulumda İngilizce açılır; **Ayarlar → Dil** bütün arayüzü, tepsi menüsü ve overlay dahil, anında değiştirir |
+| ⬇️ **Güncellemeler** | Günde bir kez yeni sürüme bakar; sağ üstteki yeşil düğme tek tıkla kurar, ayarların kalır |
 | 🐞 **Hata bildir** | Sağ üstteki böcek simgesi neyin ters gittiğini doğrudan geliştiriciye gönderir; istersen donanım bilgisi ve son kayıtlarla |
-| 🔒 **Gizli** | Hesap yok, reklam yok, güncelleme kontrolü yok. Önce okuyabileceğin, istediğin zaman kapatabileceğin anonim tanılama ([Gizlilik](#tr-gizlilik)) |
+| 🔒 **Gizli** | Hesap yok, reklam yok. Önce okuyabileceğin, istediğin zaman kapatabileceğin anonim tanılama ([Gizlilik](#tr-gizlilik)) |
 
 ---
 
@@ -477,6 +494,10 @@ renk ya da efekt ver, fanları ayarla, oyundayken sensörlere göz at.
 | FPS paneli ayarları | Ekranda FPS paneli | Dikey şerit (FPS ile) | Ayarlar ve dil |
 |---|---|---|---|
 | ![FPS paneli sayfası](docs/screenshots/tr/fps-panel.png) | ![Ekranda FPS paneli](docs/screenshots/tr/fps-on-screen.png) | ![Dikey şerit](docs/screenshots/tr/overlay-vertical.png) | ![Ayarlar sayfası](docs/screenshots/tr/settings.png) |
+
+| Yeni sürüm | İlk açılışta PawnIO |
+|---|---|
+| ![Güncelleme penceresi](docs/screenshots/tr/update.png) | ![PawnIO sorusu](docs/screenshots/tr/pawnio.png) |
 
 ---
 
@@ -524,7 +545,8 @@ RAM ışığı anakartın SMBus hattındadır ve Windows oraya yalnızca bir çe
 Rheadric Lumen kendi sürücüsünü getirmez; OpenRGB ve LibreHardwareMonitor'ın da kullandığı imzalı, açık kaynak
 **[PawnIO](https://pawnio.eu)**'yu kullanır.
 
-1. PawnIO'yu bir kez kur: [PawnIO_setup.exe](https://github.com/namazso/PawnIO.Setup/releases/latest) (geliştiricisinin GitHub'ından).
+1. PawnIO'yu bir kez kur: uygulama ilk açılışta önerir (**Ayarlar → PawnIO sürücüsü** her zaman), ya da elle:
+   [PawnIO_setup.exe](https://github.com/namazso/PawnIO.Setup/releases/latest) (geliştiricisinin GitHub'ından).
 2. Rheadric Lumen'i aç, **Cihazlar**'da RAM kartındaki **Renk ver**'e bas ve bir renk seç.
 3. Windows **her açılışta bir kez** yönetici izni ister: RAM'e yazma işi, uygulamayla birlikte kapanan küçük bir
    yardımcı süreçte (`RheadricLumen.exe --ram-host`) yapılır.
@@ -629,7 +651,8 @@ sonuna `| Out-Host` ekle.
 3. **Rheadric Lumen** klasörünü ve ayar klasörü `%APPDATA%\RheadricLumen`'i sil.
 4. PawnIO'yu yalnızca bu uygulama için kurduysan *Ayarlar → Uygulamalar*'dan diğer programlar gibi kaldır.
 
-Uygulamanın kendisi sürücü ya da servis kurmaz. Otomatik başlatma açıkken exe'yi zaten sildiysen
+Uygulama kendine ait servis kurmaz; kurmasına izin verdiysen PawnIO 4. adımdaki gibi kalkar. Otomatik başlatma açıkken
+exe'yi zaten sildiysen
 `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run` altındaki `RheadricLumen` değerini sil.
 
 ---
@@ -671,7 +694,7 @@ kapanana kadar son renklerini korur.
 
 ## Gizlilik
 
-Hesap yok, reklam yok, güncelleme kontrolü yok. İnternete iki tür rapor gider, ikisi de geliştiricinin kendi sunucusuna
+Hesap yok, reklam yok. İnternete iki tür rapor gider, ikisi de geliştiricinin kendi sunucusuna
 (bir Cloudflare Worker); amaç daha çok donanımı desteklemek ve hataları bulmak:
 
 - **Anonim tanılama.** Uygulama açıkken günde bir kez kadar: Windows sürümü, işlemci, anakart, ekran kartları, RAM
@@ -691,8 +714,14 @@ gideceği hâliyle gösterir.
 |---|---|
 | ![Tanılama bildirimi](docs/screenshots/tr/diagnostics-notice.png) | ![Hata formu](docs/screenshots/tr/bug-report.png) |
 
-Başka tek ağ trafiği, SteelSeries GG'nin kendi bilgisayarındaki yerel GameSense sunucusuna (`127.0.0.1`) gider, o da
-yalnızca bir SteelSeries cihazı kullanılırken.
+Diğer ağ trafiği:
+
+- **Güncelleme denetimi**, günde bir kez: uygulama GitHub'a bu deponun son sürümünü sorar. Seninle ya da bilgisayarınla
+  ilgili hiçbir şey gitmez; GitHub her indirmede gördüğünü görür (IP adresin ve uygulamanın sürümü).
+- **GitHub'dan indirmeler**, yalnızca sen bastığında: yeni sürüm (**İndir ve kur**) ve PawnIO kurulumu (**Kur**).
+  İkisi de çalıştırılmadan önce SHA-256 ile doğrulanır.
+- SteelSeries GG'nin kendi bilgisayarındaki yerel GameSense sunucusu (`127.0.0.1`), yalnızca bir SteelSeries cihazı
+  kullanılırken.
 
 ---
 
