@@ -2,7 +2,7 @@
 
 <img src="docs/logo.png" width="96" alt="Rheadric Lumen logo">
 
-# Rheadric Lumen v2.0.3
+# Rheadric Lumen v2.0.4
 
 **All the lighting and fans in your PC, from one window.**
 
@@ -11,7 +11,7 @@ live sensors and an FPS overlay on top of your game. One small native app instea
 
 **English** · [Türkçe](#turkce)
 
-<a href="https://github.com/rheadricc/RheadricLumen/releases/download/v2.0.3/Rheadric-Lumen-v2.0.3-win64.zip"><img height="40" alt="Download Rheadric Lumen 2.0.3 for Windows" src="https://img.shields.io/badge/Download-v2.0.3%20%7C%20Windows%2010%20%2F%2011-2ea44f?style=for-the-badge"></a>
+<a href="https://github.com/rheadricc/RheadricLumen/releases/download/v2.0.4/Rheadric-Lumen-v2.0.4-win64.zip"><img height="40" alt="Download Rheadric Lumen 2.0.4 for Windows" src="https://img.shields.io/badge/Download-v2.0.4%20%7C%20Windows%2010%20%2F%2011-2ea44f?style=for-the-badge"></a>
 
 ![No install](https://img.shields.io/badge/install-none%20needed-lightgrey?style=flat-square)
 ![No .NET needed](https://img.shields.io/badge/.NET%20runtime-not%20needed-lightgrey?style=flat-square)
@@ -38,7 +38,7 @@ live sensors and an FPS overlay on top of your game. One small native app instea
 (the renderer: `libSkiaSharp.dll`, `libHarfBuzzSharp.dll`, `av_libglesv2.dll`). Get it either way:
 
 1. the green **Download** button above →
-   [`Rheadric-Lumen-v2.0.3-win64.zip`](https://github.com/rheadricc/RheadricLumen/releases/download/v2.0.3/Rheadric-Lumen-v2.0.3-win64.zip) (~16.3 MB), or
+   [`Rheadric-Lumen-v2.0.4-win64.zip`](https://github.com/rheadricc/RheadricLumen/releases/download/v2.0.4/Rheadric-Lumen-v2.0.4-win64.zip) (~16.3 MB), or
 2. the green **`<> Code`** button at the top of this page → **Download ZIP**.
 
 Then **extract the zip** (right-click → *Extract All…*), move the **Rheadric Lumen** folder somewhere permanent
@@ -110,6 +110,7 @@ in one window: pick the devices, pick a color or an effect, set the fans, and ke
 | ⚡ **Quick control** | Tray menu with colors, effects, profiles and the overlay; **Ctrl+Alt+L** toggles every light from anywhere; optional start with Windows; [command line](#command-line) |
 | 🌍 **English / Türkçe** | Starts in English; **Settings → Language** switches the whole interface at once, tray menu and overlay included |
 | ⬇️ **Updates** | Looks for a new version once a day; the green button at the top right installs it in one click and your settings stay |
+| 📦 **Move your settings** | **Settings → Move your settings → Export** puts colors, profiles, favorites, fan settings and the overlay in one file; **Import** on the new PC brings them back |
 | 🐞 **Report a bug** | The bug icon at the top right sends what went wrong straight to the developer, with the hardware and recent logs if you want |
 | 🔒 **Private** | No account, no ads. Anonymous diagnostics you can read first and turn off any time ([Privacy](#privacy)) |
 
@@ -279,7 +280,8 @@ In PowerShell add `| Out-Host` to see the output.
 
 1. **Settings** → turn **Start with Windows** off.
 2. Tray icon → **Exit**. Fans go back to driver / BIOS control automatically.
-3. Delete the **Rheadric Lumen** folder and the settings folder `%APPDATA%\RheadricLumen`.
+3. Delete the **Rheadric Lumen** folder and the settings folder `%APPDATA%\RheadricLumen`. Want them back later? Do
+   **Settings → Move your settings → Export** first.
 4. If you installed PawnIO only for this app, remove it from *Settings → Apps* like any other program.
 
 The app installs no services of its own; PawnIO, if you let it install it, goes as in step 4. If you already deleted
@@ -393,7 +395,7 @@ oyunun üstünde canlı sensör ve FPS paneli. Bir yığın üretici programı y
 `libHarfBuzzSharp.dll`, `av_libglesv2.dll`). İki yoldan biriyle al:
 
 1. yukarıdaki yeşil **Download** düğmesi →
-   [`Rheadric-Lumen-v2.0.3-win64.zip`](https://github.com/rheadricc/RheadricLumen/releases/download/v2.0.3/Rheadric-Lumen-v2.0.3-win64.zip) (~16.3 MB), ya da
+   [`Rheadric-Lumen-v2.0.4-win64.zip`](https://github.com/rheadricc/RheadricLumen/releases/download/v2.0.4/Rheadric-Lumen-v2.0.4-win64.zip) (~16.3 MB), ya da
 2. sayfanın üstündeki yeşil **`<> Code`** düğmesi → **Download ZIP**.
 
 Sonra **zip'i çıkar** (sağ tık → *Tümünü Ayıkla…*), **Rheadric Lumen** klasörünü kalıcı bir yere taşı
@@ -470,6 +472,7 @@ renk ya da efekt ver, fanları ayarla, oyundayken sensörlere göz at.
 | ⚡ **Hızlı kontrol** | Renkler, efektler, profiller ve overlay tepsi menüsünde; **Ctrl+Alt+L** her yerden bütün ışıkları açar / kapatır; isteğe bağlı Windows ile başlatma; [komut satırı](#tr-komut) |
 | 🌍 **English / Türkçe** | İlk kurulumda İngilizce açılır; **Ayarlar → Dil** bütün arayüzü, tepsi menüsü ve overlay dahil, anında değiştirir |
 | ⬇️ **Güncellemeler** | Günde bir kez yeni sürüme bakar; sağ üstteki yeşil düğme tek tıkla kurar, ayarların kalır |
+| 📦 **Ayarlarını taşı** | **Ayarlar → Ayarlarını taşı → Dışa aktar** renkleri, profilleri, favorileri, fan ayarlarını ve overlay'i tek dosyaya koyar; yeni bilgisayarda **İçe aktar** hepsini geri getirir |
 | 🐞 **Hata bildir** | Sağ üstteki böcek simgesi neyin ters gittiğini doğrudan geliştiriciye gönderir; istersen donanım bilgisi ve son kayıtlarla |
 | 🔒 **Gizli** | Hesap yok, reklam yok. Önce okuyabileceğin, istediğin zaman kapatabileceğin anonim tanılama ([Gizlilik](#tr-gizlilik)) |
 
@@ -648,7 +651,8 @@ sonuna `| Out-Host` ekle.
 
 1. **Ayarlar** → **Windows ile başlat**'ı kapat.
 2. Tepsi simgesi → **Çıkış**. Fanlar kendiliğinden sürücüye / BIOS'a döner.
-3. **Rheadric Lumen** klasörünü ve ayar klasörü `%APPDATA%\RheadricLumen`'i sil.
+3. **Rheadric Lumen** klasörünü ve ayar klasörü `%APPDATA%\RheadricLumen`'i sil. Sonra geri isteyeceksen önce
+   **Ayarlar → Ayarlarını taşı → Dışa aktar** yap.
 4. PawnIO'yu yalnızca bu uygulama için kurduysan *Ayarlar → Uygulamalar*'dan diğer programlar gibi kaldır.
 
 Uygulama kendine ait servis kurmaz; kurmasına izin verdiysen PawnIO 4. adımdaki gibi kalkar. Otomatik başlatma açıkken
